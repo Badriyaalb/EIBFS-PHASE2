@@ -1,0 +1,78 @@
+#BankLogo{width:20%;}
+#menu
+{
+    display: flex; 
+    justify-content: space-between ;
+    font-weight: bold; 
+    font-size:  20px;
+    padding: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center; 
+   
+    
+  
+} 
+a
+{
+text-decoration: none;
+color:rgb(100, 100, 100);
+}
+    /* display them in a single flex(all togather) , justify(arrange the content horizantly); */
+
+#LoginBox
+{
+    background-color:rgb(255, 220, 25) ; 
+    border-style: groove; 
+    border-radius: 4px;  
+    border-color:rgb(255, 203, 70) ; 
+    width: 100%;
+    text-align:center ; 
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+#username {border: 2px solid rgb(255, 233, 205);
+            border-radius: 4px; border-radius: 40px; }
+#password
+{
+    border: 2px solid rgb(255, 233, 205);
+    border-radius: 4px; border-radius: 40px;
+} 
+#chosecard{
+     font-size: 50px; 
+    text-align:center ; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif} 
+#Cards 
+{ 
+    display: flex; 
+    
+    justify-content: space-evenly
+}
+.cardimg 
+{
+    max-width: 250px ;
+    margin-right: auto;
+}
+.cardtitles
+{
+    font-size: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color:rgb(167, 124, 15)
+
+
+}
+.cardlinks{}
+.carddiv
+{
+
+    margin: 20px;
+}
+
+#webmiddlecontent{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
