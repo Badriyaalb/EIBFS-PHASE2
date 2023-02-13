@@ -1,14 +1,15 @@
-#BankLogo{width:20%;}
+#BankLogo{width:40%; margin: auto;}
 #menu
 {
     display: flex; 
     justify-content: space-between ;
     font-weight: bold; 
     font-size:  20px;
-    padding: 50px;
+    padding: 25px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align:center; 
-   
+   border-top: 2px solid sandybrown;
+   border-bottom: 2px solid sandybrown;
     
   
 } 
@@ -41,11 +42,18 @@ color:rgb(100, 100, 100);
     border-radius: 4px; border-radius: 40px;
 } 
 .chosecard{
-     font-size: 50px; 
-     padding-top: 100px;
-     padding-bottom: 50px;
+    font-size: 50px; 
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align:center ; 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif} 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+} 
+#borderlines
+{
+color: rgba(114, 105, 88, 0.788);
+margin: auto;
+width: 1200px;
+}
 #Cards 
 { 
     display: flex; 
@@ -140,7 +148,8 @@ padding-bottom: 50px;
     text-decoration: solid;
     font-size: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding-bottom: 80px;
+    padding-bottom: 10px;
+    padding-top: 0px;
 }
 #financialGuidance
 { 
@@ -150,26 +159,30 @@ padding-bottom: 50px;
 }
 .finaPar1234
 {
-    width: 23%;
+    width: 10%;
     padding : 10%;
-    
+    color: aliceblue;
     text-shadow: rgb(255, 255, 255);
     font-size: 20px;
     text-decoration: solid;
-    background-color: rgba(240, 248, 255, 0.918);
     text-align: left;
+    font-weight: bold; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(0, 0, 0, 0.678) ;
+    border-radius: 20px;
+
    
 }
 
 #financeimg1{
-background-image: url(screenshots/1.jpg); background-size: cover;
+background-image: url(screenshots/1.jpg); background-size: cover ;width :400Px;
 background-position: right;}
 #financeimg2
-{background-image: url(screenshots/2.jpg);background-size: cover; background-position: right;}
+{background-image: url(screenshots/2.jpg);background-size: cover; width :400Px; background-position: right; }
 #financeimg3
-{background-image: url(screenshots/3.jpg);background-size: cover; background-position: right;}
+{background-image: url(screenshots/3.jpg);background-size: cover; background-position: right; width :400Px }
 #financeimg4
-{background-image: url(screenshots/4.jpg);background-size: cover; background-position: right;
+{background-image: url(screenshots/4.jpg);background-size: cover; background-position: right; width :400Px
 }
 .financecontent
 {
@@ -187,7 +200,7 @@ justify-content: space-between;
 color: rgb(207, 207, 207);
 margin: auto;
 margin-top: 10px;
-width: 1500px;
+width: 1200px;
 }
 #footerNav
 {
