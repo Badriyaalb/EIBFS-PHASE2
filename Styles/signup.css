@@ -5,9 +5,10 @@ body
 #body1
 {
     background-color: white;
-    
+   box-shadow: 10px 10px darkgrey;
     margin: 5% 20% ;
-    padding: 5%;
+    border-radius: 20px;
+    padding: 10%;
 }
 hr{
     width: 80%;

@@ -26,12 +26,14 @@
     <section id="webmiddlecontent"> 
             
             <div> 
-                <form action="" id="LoginBox">
+                <form action="" method="post" name="loginForm" id="LoginBox" onsubmit="return validateForm()">
             
-                    <input type="text" placeholder="Username" name="Username" id="username" required><br>  
+                    <input type="text" placeholder="Username" name="userName" id="username" required><br>  
                     <!-- br stands for put the next element bellow this element -->
-                    <input type="password" placeholder="Password" name="Password" id="password" required><br> 
+                    <p id="userNameError"></p>
+                    <input type="password" placeholder="Password" name="userPassword" id="password" required><br> 
                     <!--  type is password means bullets not text , placeholder is what is written before you enter data -->
+                    <p id="userPasswordError"></p>
                     <input type="checkbox"> Save Password<br> 
                     <!-- type (Check box) tick in side the box and on its right it written save password description -->
                     <input type="submit" value="Log In"><br> 
@@ -40,6 +42,8 @@
                     <a href="https://digital.mashreqbank.com/onlinebanking/steps/signup/customerdetails/carddetails/">Sign Up </a><br> 
                     <a href="https://www.google.com/maps/search/mashreq+bank+-+united+arab+emirates/@24.8103472,54.5004065,9z/data=!3m1!4b1"> branchs in UAE </a> 
                 </form>
+                
+           
             </div>
 
         <section >
@@ -169,8 +173,9 @@
           <p id="rights">&RightArrowBar; 2023 Mashreq Bank. All rights recieved</p>
 
     </footer>
-   
     
-
+    
+    
+<script src="Scripts/login.js"></script>
 </body>
 </html>
