@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../Styles/signup.css">
+    
+</head>
+<body>
+    <div id="body1">
+    <h1>Bank Account registeration Form</h1>
+    <hr>
+    <section id="accountinfo">
+        <h2 id="sectionhead">
+         Account Information</h2><br>
+         <div class="contentbox">
+         <h3> Account Type</h3>
+         <select name="accounttype" id="accounttype">
+            <option value="accounttype"> Account Type</option>
+            <option value="salariedaccount"> Salaried Account</option>
+            <option value="savingaccount"> Saving Account</option>
+            <option value="fixedaccount"> Fixed Account</option>
+            <option value="calldepositaccount"> Call Deposit Account</option>
+         </select>
+         <h3> Currency Type</h3>
+         <select name="currencytype" id="currencytype">
+            <option value="AED"> AED</option>
+            <option value="USD"> USD</option>
+            <option value="GBP"> GPB</option>
+            <option value="EURO"> EURO</option>  
+         </select>
+</div>
+    </section>
+    <hr>
+    <section id="personalinfo">
+        <h2 id="sectionhead">
+         Personal Information</h2>
+         <p id="personaldescription">
+            The information given in this section is considered as the information of the primary account owner information.
+         </p>
+       
+         <div class="contentbox">
+            
+    <form action="#" method="POST" name="loginForm" onsubmit="return validateForm()">
+        <h3 id="boldtitles">Name</h3>
+        <input type="text" name="first" placeholder="First Name"><input type="text" name="Last" placeholder="Last Name">
+        <h3 id="boldtitles">Phone Number</h3>
+        <input type="tel" name="first" placeholder="First Name">
+        <h3 id="boldtitles">Date of Birth</h3>
+        <input type="date" name="Date">
+        <p id="userPasswordError"></p>
+        
+    </form>
+
+       
+       <h3 id="boldtitles">Resdidental Address</h3>
+       <input type="text" name="Street" placeholder="Street"> <input type="text" name="City" placeholder="City"> <br>
+            <select name="Country" id="Country">
+                <option value="Country"> Select Country</option>
+                <option value="UAE"> United Arab Emirates</option>
+                <option value="USA"> United States</option>
+                <option value="SAUDI"> Saudi Arabia</option>
+                <option value="KUWAIT"> Kuwait</option>
+                <option value="BAHRAIN"> Bahrain</option>
+                <option value="INDIA"> India</option>
+                <option value="UK"> United Kingdom</option>
+                <option value="FRA"> France</option>
+            </select>  
+     <input type="text" name="State" placeholder="State"> 
+       <h3 id="boldtitles">Maritual Status</h3>
+            <select name="Gender" id="Gender">
+                <option value="Male"> Male</option>
+                <option value="Female"> Female</option>
+            </select>
+       <h3 id="boldtitles">Social Security Number</h3>
+       <input type="text" name="first" placeholder="">
+       <h3 id="boldtitles">Occupation</h3>
+       <input type="text" name="">
+       <h3 id="boldtitles">Employer Name</h3>
+       <input type="text" name="">
+       <br>
+       
+       <p><input type="checkbox">Agree to the terms and conditions</p><br>
+        <input type="submit">
+    </div>  
+    
+    </div>
+    <script src="../Scripts/signup.js"></script>
+</section>
+</body>
+</html>

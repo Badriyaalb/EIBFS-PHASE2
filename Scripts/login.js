@@ -14,7 +14,7 @@ function validateForm(){
     if(userPassword.length==0){
         document.getElementById("userPasswordError").innerText = "Please enter a password";
         
-    } else if(userPassword.length<=8 || userPassword.length >=20){
+    } else if(userPassword.length<=10 && str == str.toUpperCase() && str==str) {
         document.getElementById("userPasswordError").innerText = "Please enter a password between 8 and 20 characters";
         return false;
     }
