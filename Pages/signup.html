@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+0<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Styles/signup.css">
+    <link rel="html" href="../Scripts/signup.js">
     
 </head>
 <body>
+    <form action="#" method="POST" name="loginForm" onsubmit="return validateForm()">
     <div id="body1">
     <h1>Bank Account registeration Form</h1>
     <hr>
@@ -18,21 +20,23 @@
          <div class="contentbox">
          <h3> Account Type</h3>
          <select name="accounttype" id="accounttype">
-            <option value="accounttype"> Account Type</option>
+            <option selected disabled value="selecttype"> Select account type</option>
             <option value="salariedaccount"> Salaried Account</option>
             <option value="savingaccount"> Saving Account</option>
             <option value="fixedaccount"> Fixed Account</option>
             <option value="calldepositaccount"> Call Deposit Account</option>
          </select>
          <h3> Currency Type</h3>
-         <select name="currencytype" id="currencytype">
+         <select name="currencytype" id="currencytype" >
+            <option selected disabled value="currency"> Select Currency</option>
             <option value="AED"> AED</option>
             <option value="USD"> USD</option>
             <option value="GBP"> GPB</option>
             <option value="EURO"> EURO</option>  
          </select>
-</div>
+        </div>
     </section>
+     
     <hr>
     <section id="personalinfo">
         <h2 id="sectionhead">
@@ -43,22 +47,22 @@
        
          <div class="contentbox">
             
-    <form action="#" method="POST" name="loginForm" onsubmit="return validateForm()">
+    
         <h3 id="boldtitles">Name</h3>
-        <input type="text" name="first" placeholder="First Name"><input type="text" name="Last" placeholder="Last Name">
+        <input type="text" name="first" placeholder="First Name" required ><input type="text" name="Last" placeholder="Last Name" required >
         <h3 id="boldtitles">Phone Number</h3>
-        <input type="tel" name="first" placeholder="First Name">
+        <input type="tel" name="first" placeholder="First Name" required>
         <h3 id="boldtitles">Date of Birth</h3>
-        <input type="date" name="Date">
+        <input type="date" name="Date" required>
         <p id="userPasswordError"></p>
         
-    </form>
+    
 
        
        <h3 id="boldtitles">Resdidental Address</h3>
-       <input type="text" name="Street" placeholder="Street"> <input type="text" name="City" placeholder="City"> <br>
-            <select name="Country" id="Country">
-                <option value="Country"> Select Country</option>
+       <input type="text" name="Street" placeholder="Street - optional"> <input type="text" name="City" placeholder="City" required> <br>
+            <select name="Country" id="Country" placeholder="" required>
+                <option selected disabled value="Country"> Select Country</option>
                 <option value="UAE"> United Arab Emirates</option>
                 <option value="USA"> United States</option>
                 <option value="SAUDI"> Saudi Arabia</option>
@@ -68,26 +72,23 @@
                 <option value="UK"> United Kingdom</option>
                 <option value="FRA"> France</option>
             </select>  
-     <input type="text" name="State" placeholder="State"> 
+     <input type="text" name="State" placeholder="State" required minlength="4"> 
        <h3 id="boldtitles">Maritual Status</h3>
             <select name="Gender" id="Gender">
                 <option value="Male"> Male</option>
                 <option value="Female"> Female</option>
             </select>
-       <h3 id="boldtitles">Social Security Number</h3>
-       <input type="text" name="first" placeholder="">
-       <h3 id="boldtitles">Occupation</h3>
-       <input type="text" name="">
-       <h3 id="boldtitles">Employer Name</h3>
-       <input type="text" name="">
+       
        <br>
        
        <p><input type="checkbox">Agree to the terms and conditions</p><br>
-        <input type="submit">
+        <input type="submit" value="submit">
     </div>  
     
     </div>
+</form>
     <script src="../Scripts/signup.js"></script>
 </section>
+</div>
 </body>
 </html>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width={device-width}, initial-scale=1.0">
     <title>Mashreq Bank website by Badriya</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="html" href="../pages/signup.html">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
 </head>
@@ -26,26 +27,27 @@
     <section id="webmiddlecontent"> 
             
             <div> 
-                <form action="" method="post" name="loginForm" id="LoginBox" onsubmit="return validateForm()">
+                <form action="" method="post" name="loginForm" id="LoginBox" >
             
-                    <input type="text" placeholder="Username" name="userName" id="username" required><br>  
-                    <!-- br stands for put the next element bellow this element -->
-                    <p id="userNameError"></p>
-                    <input type="password" placeholder="Password" name="userPassword" id="password" required><br> 
-                    <!--  type is password means bullets not text , placeholder is what is written before you enter data -->
-                    <p id="userPasswordError"></p>
+                    <input type="text" placeholder="Username" name="userName" id="username" required minlength="8" maxlength="20"><br>  
+                    
+                    <input type="password" placeholder="Password" name="userPassword" id="password" required minlength="10" onkeyup="validatePassword()" ><br> 
+                    
                     <input type="checkbox"> Save Password<br> 
-                    <!-- type (Check box) tick in side the box and on its right it written save password description -->
+                   
+                        <p id="passwordErrorLC"></p>
+                        <p id="passwordErrorUC"></p>
+                        <p id="passwordErrorN"></p>
                     <input type="submit" value="Log In"><br> 
-                    <!-- Submit mean( you click it), value is what is visible for the web surfer -->
+                    
                     <a href="https://digital.mashreqbank.com/onlinebanking/">Forgot Password </a><br> 
-                    <a href="https://digital.mashreqbank.com/onlinebanking/steps/signup/customerdetails/carddetails/">Sign Up </a><br> 
+                    <a href="http://127.0.0.1:5507/Pages/signup.HTML">Sign Up </a><br> 
                     <a href="https://www.google.com/maps/search/mashreq+bank+-+united+arab+emirates/@24.8103472,54.5004065,9z/data=!3m1!4b1"> branchs in UAE </a> 
                 </form>
                 
            
             </div>
-
+                                           
         <section >
     <h1 class="chosecard"> Apply For Your Prefered Card </h1>
         
